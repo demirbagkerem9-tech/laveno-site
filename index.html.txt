@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LAVENO | Napoli 450°</title>
+
+<style>
+:root{
+    --black:#0E0E0E;
+    --gold:#C6A75E;
+    --white:#F2E8D5;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Georgia', serif;
+    background:var(--black);
+    color:var(--white);
+    line-height:1.6;
+}
+
+section{
+    padding:100px 20px;
+    text-align:center;
+    max-width:1000px;
+    margin:auto;
+}
+
+h1{
+    font-size:60px;
+    letter-spacing:8px;
+    margin-bottom:20px;
+    color:var(--gold);
+}
+
+h2{
+    font-size:32px;
+    margin-bottom:20px;
+    color:var(--gold);
+}
+
+p{
+    max-width:700px;
+    margin:0 auto 20px auto;
+    font-size:18px;
+    opacity:0.9;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 40px;
+    border:1px solid var(--gold);
+    color:var(--gold);
+    text-decoration:none;
+    margin-top:20px;
+    transition:0.3s ease;
+}
+
+.btn:hover{
+    background:var(--gold);
+    color:var(--black);
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.sub{
+    font-size:18px;
+    letter-spacing:3px;
+    margin-top:10px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+    margin-top:40px;
+}
+
+.card{
+    padding:30px;
+    border:1px solid rgba(198,167,94,0.3);
+}
+
+footer{
+    padding:40px;
+    font-size:14px;
+    opacity:0.6;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <h1>LAVENO</h1>
+    <div class="sub">NAPOLI 450°</div>
+    <p>İstanbul’da 450°C taş fırın ile canlı Napoli deneyimi.</p>
+    <a class="btn" href="https://wa.me/905XXXXXXXXX?text=Merhaba,%20LAVENO%20için%20450°%20Napoli%20catering%20teklifi%20almak%20istiyorum." target="_blank">
+        Teklif Al
+    </a>
+</section>
+
+<section>
+    <h2>Ateşin Gücü. Napoli Geleneği.</h2>
+    <p>
+        LAVENO, 450°C taş fırın teknolojisi ile Napoli usulü pizzayı 
+        etkinliklerinize taşır. Canlı pişirme deneyimi ve premium sunum 
+        ile unutulmaz anlar yaratır.
+    </p>
+</section>
+
+<section>
+    <h2>Nasıl Çalışır?</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Rezervasyon</h3>
+            <p>Etkinlik detaylarınızı bizimle paylaşın.</p>
+        </div>
+        <div class="card">
+            <h3>Kurulum</h3>
+            <p>Mobil taş fırın ekibimiz mekâna gelir.</p>
+        </div>
+        <div class="card">
+            <h3>Canlı Pişirme</h3>
+            <p>450°’de 1 dakikada gerçek Napoli pizzası.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Deneyim Paketleri</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Silver Experience</h3>
+            <p>Butik etkinlikler için ideal başlangıç paketi.</p>
+        </div>
+        <div class="card">
+            <h3>Gold Experience</h3>
+            <p>Daha geniş davetler için premium servis.</p>
+        </div>
+        <div class="card">
+            <h3>Signature Fire</h3>
+            <p>Özel konsept ve maksimum deneyim.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 LAVENO • Napoli 450° • Istanbul
+</footer>
+
+</body>
+</html>
