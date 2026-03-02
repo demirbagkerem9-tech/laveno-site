@@ -4,200 +4,201 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LAVENO | Napoli 450°</title>
+
 <link rel="icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<style@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+
+<style>
+
+/* ===== ROOT COLORS ===== */
+:root{
+  --black:#0E0E0E;
+  --gold:#C6A75E;
+  --white:#F2E8D5;
+}
+
+/* ===== RESET ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Georgia', serif;
+  background:var(--black);
+  color:var(--white);
+  line-height:1.6;
+}
+
+/* ===== HERO ===== */
+.hero{
+  text-align:center;
+  padding:140px 20px;
+  max-width:1000px;
+  margin:auto;
+}
+
+.hero h1{
+  font-size:64px;
+  letter-spacing:8px;
+  color:var(--gold);
+}
+
+.hero .sub{
+  font-size:28px;
+  margin-top:10px;
+  color:var(--gold);
+}
+
+.hero p{
+  margin:20px auto;
+  max-width:600px;
+  opacity:0.9;
+}
+
+/* ===== BUTTON ===== */
+.btn{
+  display:inline-block;
+  padding:14px 40px;
+  border:1px solid var(--gold);
+  color:var(--gold);
+  text-decoration:none;
+  margin-top:20px;
+  transition:0.3s ease;
+}
+
+.btn:hover{
+  background:var(--gold);
+  color:var(--black);
+  box-shadow:0 0 20px rgba(198,167,94,0.6);
+}
+
+/* ===== SECTIONS ===== */
+section{
+  padding:100px 20px;
+  max-width:1000px;
+  margin:auto;
+  text-align:center;
+}
+
+h2{
+  font-size:36px;
+  color:var(--gold);
+  margin-bottom:20px;
+}
+
+/* ===== CARD ===== */
+.card{
+  border:1px solid rgba(198,167,94,0.3);
+  padding:30px;
+  margin:20px 0;
+  transition:0.4s ease;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 40px rgba(198,167,94,0.2);
+}
+
+/* ===== FOOTER ===== */
+footer{
+  padding:40px;
+  text-align:center;
+  font-size:14px;
+  opacity:0.6;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
 }
 
 .hero h1,
 .hero .sub,
 .hero p,
-.hero .btn {
-    opacity: 0;
-    animation: fadeUp 1s ease forwards;
+.hero .btn{
+  opacity:0;
+  animation:fadeUp 1s ease forwards;
 }
 
-.hero .sub { animation-delay: 0.2s; }
-.hero p { animation-delay: 0.4s; }
-.hero .btn { animation-delay: 0.6s; }
-    :root{
-    --black:#0E0E0E;
-    --gold:#C6A75E;
-    --white:#F2E8D5;
-}
+.hero .sub{ animation-delay:0.2s; }
+.hero p{ animation-delay:0.4s; }
+.hero .btn{ animation-delay:0.6s; }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family: 'Georgia', serif;
-    background:var(--black);
-    color:var(--white);
-    line-height:1.6;
-}
-
-section{
-    padding:100px 20px;
-    text-align:center;
-    max-width:1000px;
-    margin:auto;
-}
-
-h1{
-    font-size:60px;
-    letter-spacing:8px;
-    margin-bottom:20px;
-    color:var(--gold);
-}
-
-h2{
-    font-size:32px;
-    margin-bottom:20px;
-    color:var(--gold);
-}
-
-p{
-    max-width:700px;
-    margin:0 auto 20px auto;
-    font-size:18px;
-    opacity:0.9;
-}
-
-..btn {
-    display:inline-block;
-    padding:14px 40px;
-    border:1px solid var(--gold);
-    color:var(--gold);
-    text-decoration:none;
-    margin-top:20px;
-    transition:0.3s ease;
-    position:relative;
-    overflow:hidden;
-}
-
-.btn:hover {
-    box-shadow: 0 0 20px rgba(198,167,94,0.6);
-    background: var(--gold);
-    color: var(--black);
-}
-
-.hero{
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-}
-
-.sub{
-    font-size:18px;
-    letter-spacing:3px;
-    margin-top:10px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:40px;
-    margin-top:40px;
-}
-
-..card {
-    padding:30px;
-    border:1px solid rgba(198,167,94,0.3);
-    transition:0.4s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(198,167,94,0.2);
-}
-
-footer{
-    padding:40px;
-    font-size:14px;
-    opacity:0.6;
-}
 </style>
 </head>
 
 <body>
 
-<section class="hero">
-    <h1>LAVENO</h1>
-    <div class="sub">NAPOLI 450°</div>
-    <p>İstanbul’da 450°C taş fırın ile canlı Napoli deneyimi.</p>
-    <a class="btn" href="https://wa.me/905063633087?text=Merhaba,%20LAVENO%20için%20450°%20Napoli%20catering%20teklifi%20almak%20istiyorum." target="_blank">
-        Teklif Al
-    </a>
+<div class="hero">
+  <h1>LAVENO</h1>
+  <div class="sub">NAPOLI 450°</div>
+  <p>İstanbul’da 450°C taş fırın ile canlı Napoli deneyimi.</p>
+  <a href="https://wa.me/905063633087" class="btn">Teklif Al</a>
+</div>
+
+<section>
+  <h2>Ateşin Gücü. Napoli Geleneği.</h2>
+  <p>LAVENO, 450°C taş fırın teknolojisi ile Napoli usulü pizzayı etkinliklerinize taşır. Canlı pişirme deneyimi ve premium sunum ile unutulmaz anlar yaratır.</p>
 </section>
 
 <section>
-    <h2>Ateşin Gücü. Napoli Geleneği.</h2>
-    <p>
-        LAVENO, 450°C taş fırın teknolojisi ile Napoli usulü pizzayı 
-        etkinliklerinize taşır. Canlı pişirme deneyimi ve premium sunum 
-        ile unutulmaz anlar yaratır.
-    </p>
+  <h2>Nasıl Çalışır?</h2>
+
+  <div class="card">
+    <h3>Rezervasyon</h3>
+    <p>Etkinlik detaylarınızı bizimle paylaşın.</p>
+  </div>
+
+  <div class="card">
+    <h3>Kurulum</h3>
+    <p>Mobil taş fırın ekibimiz mekâna gelir.</p>
+  </div>
+
+  <div class="card">
+    <h3>Canlı Pişirme</h3>
+    <p>450°'de 1 dakikada gerçek Napoli pizzası.</p>
+  </div>
+
 </section>
 
 <section>
-    <h2>Nasıl Çalışır?</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Rezervasyon</h3>
-            <p>Etkinlik detaylarınızı bizimle paylaşın.</p>
-        </div>
-        <div class="card">
-            <h3>Kurulum</h3>
-            <p>Mobil taş fırın ekibimiz mekâna gelir.</p>
-        </div>
-        <div class="card">
-            <h3>Canlı Pişirme</h3>
-            <p>450°’de 1 dakikada gerçek Napoli pizzası.</p>
-        </div>
-    </div>
-</section>
+  <h2>Deneyim Paketleri</h2>
 
-<section>
-    <h2>Deneyim Paketleri</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Silver Experience</h3>
-            <p>Butik etkinlikler için ideal başlangıç paketi.</p>
-        </div>
-        <div class="card">
-            <h3>Gold Experience</h3>
-            <p>Daha geniş davetler için premium servis.</p>
-        </div>
-        <div class="card">
-            <h3>Signature Fire</h3>
-            <p>Özel konsept ve maksimum deneyim.</p>
-        </div>
-    </div>
+  <div class="card">
+    <h3>Silver Experience</h3>
+    <p>Butik etkinlikler için ideal başlangıç paketi.</p>
+  </div>
+
+  <div class="card">
+    <h3>Gold Experience</h3>
+    <p>Daha geniş davetler için premium servis.</p>
+  </div>
+
+  <div class="card">
+    <h3>Signature Fire</h3>
+    <p>Özel konsept ve maksimum deneyim.</p>
+  </div>
+
 </section>
 
 <footer>
-    © 2026 LAVENO • Napoli 450° • Istanbul
+© 2026 LAVENO • Napoli 450° • İstanbul
 </footer>
 
 </body>
-html {
-    scroll-behavior: smooth;
-}
-
-
-
+</html>
